@@ -1,21 +1,61 @@
 /* ########## Defaults ###########*/
+html {
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+}
 
 nav,header,footer{
   display: block;
 }
 body{
   background-color: #F8F4EE;
+  font-family: 'Fira Sans'
 }
 body {
   line-height: 1;
   margin: 0;
 }
-
+section {
+  background-image: url('Rainier.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 570px;
+  height: 100vh;
+  width: auto;
+  margin-top: 0;
+}
 .container{
   width: 100%;
   margin: auto;
   padding-top:4%;
-  padding-bottom: 4%;
+  padding-bottom: 500;
+}
+h2 {
+  margin: 0;
+  padding-top: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  font-family: 'Pacifico'
+}
+h3 {
+  margin: 0;
+  padding-top: 600px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  font-family: 'Pacifico'
+}
+#Find-me {
+  padding-top:30px;
+  padding-bottom:30px;
+  color: black;
+
+}
+h3.close {
+  padding-top: 5px;
 }
 .row {
   width: 100%;
@@ -41,18 +81,27 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 /*#######Custom Styles########*/
-
+#afterRanier{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 .column {
   float: left;
   width: 50%;
   align-items: center;
   text-align: center;
+  margin: 0px;
+  height:100%;
 }
 .left{
   width: 50%;
 }
+#scroll-margin{
+  height: 4%;
+}
 .right{
-  width:50%;
+  width:40%;
+  padding-right: 10%;
 }
 h1.large {
   color:white;
@@ -60,6 +109,49 @@ h1.large {
   margin:0;
   line-height: 70px;
 }
+p{
+  font-size: 35px;
+}
+#profile-pic {
+  width: 70%;
+  height:70%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
 
 /*###########Nav Bar ####*/
 
@@ -71,7 +163,6 @@ img {
   width: 200px;
   height: 200px;
 }
-
 nav ul {
   background-color: #6E7A87;
   overflow: hidden;
