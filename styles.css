@@ -60,48 +60,27 @@ h3.close {
 .row {
   width: 100%;
   margin: auto;
+  display: flex;
   padding-top: 4%;
   padding-bottom: 4%;
+  align-items: center;
 }
 .row::after {
   display:table;
   clear: both;
   content: "":
 }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 /*#######Custom Styles########*/
-#afterRanier{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 .column {
   float: left;
-  width: 50%;
+  width: 42%;
   align-items: center;
   text-align: center;
-  margin: 0px;
-  height:100%;
-}
-.left{
-  width: 50%;
-}
-#scroll-margin{
-  height: 4%;
-}
-.right{
-  width:40%;
-  padding-right: 10%;
+  vertical-align: middle;
+  padding-left: 4%;
+  padding-right: 4%;
+  height:auto;
+  display: table-cell;
 }
 h1.large {
   color:white;
@@ -114,7 +93,7 @@ p{
 }
 #profile-pic {
   width: 70%;
-  height:70%;
+  height: 70%;
 }
 .fa {
   padding: 20px;
@@ -223,5 +202,11 @@ ul.topnav li.dropdownIcon {
     display:block;
     text-align: left;
 
+  }
+  .column {
+    display: block;
+    width: 92%;
+    padding-left: 4%;
+    padding-right:4%;
   }
 }
