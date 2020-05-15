@@ -15,7 +15,34 @@ body {
   line-height: 1;
   margin: 0;
 }
-section {
+
+#css-table {
+  display: table;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+#css-table::after {
+  display:table;
+  clear: both;
+  content: "":
+}
+#css-table .col {
+  width: 42%;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4%;
+  padding-top: 150px;
+  display: table-cell;
+}
+#css-table .col:nth-child(even) {
+  background: #ccc;
+}
+#css-table .col:nth-child(odd) {
+  background: #eee;
+}
+#welcome {
   background-image: url('Rainier.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +51,14 @@ section {
   height: 100vh;
   width: auto;
   margin-top: 0;
+}
+#more-content {
+  align-items: center;
+}
+h4{
+  text-align: center;
+  font-family: Pacifico;
+  font-size: 30px;
 }
 .container{
   width: 100%;
@@ -48,40 +83,45 @@ h3 {
   font-size: 30px;
   font-family: 'Pacifico'
 }
+.close{
+  padding-top: 10px;
+}
 #Find-me {
   padding-top:30px;
   padding-bottom:30px;
   color: black;
+}
+#more-content {
+padding: 20px;
+}
+.parent{
+  text-align:center;
+}
+button{
+  background-color: #C79997;
+  border: 2px solid black;
+  border-radius: 4px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+button:hover {
+  background-color: #C79997;
+  opacity: 1;
+}
 
-}
-h3.close {
-  padding-top: 5px;
-}
-.row {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  align-items: center;
-}
-.row::after {
-  display:table;
-  clear: both;
-  content: "":
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 /*#######Custom Styles########*/
-.column {
-  float: left;
-  width: 42%;
-  align-items: center;
-  text-align: center;
-  vertical-align: middle;
-  padding-left: 4%;
-  padding-right: 4%;
-  height:auto;
-  display: table-cell;
-}
+
 h1.large {
   color:white;
   font-size: 56px;
@@ -92,8 +132,9 @@ p{
   font-size: 35px;
 }
 #profile-pic {
-  width: 70%;
-  height: 70%;
+  max-width:80%;
+  width: auto;
+  height:auto;
 }
 .fa {
   padding: 20px;
@@ -113,6 +154,10 @@ p{
 /* Facebook */
 .fa-facebook {
   background: #3B5998;
+  color: white;
+}
+.fa-github{
+  background: #542C7C;
   color: white;
 }
 
@@ -203,10 +248,21 @@ ul.topnav li.dropdownIcon {
     text-align: left;
 
   }
-  .column {
+  #css-table .col  {
     display: block;
     width: 92%;
     padding-left: 4%;
     padding-right:4%;
+  }
+}
+@media screen and (max-width:612px){
+  h3{
+    padding-top: 510px;
+  }
+}
+
+@media screen and (max-width:363px){
+  h3{
+    padding-top: 420px;
   }
 }
